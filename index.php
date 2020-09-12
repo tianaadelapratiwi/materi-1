@@ -15,4 +15,4 @@ $bmw->tipe = "320i";
 $bmw->mesin = "2000cc";
 $bmw->max_speed = "280km/h";
 
-encho "Tipe ".$bmw->cetakTipe();
+echo "Tipe ".$bmw->cetakTipe();
