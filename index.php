@@ -7,6 +7,10 @@ class Mobil {
 	public function cetakTipe(){
 		return $this->tipe;
 	}
+
+	function kecepatanMaksimal(){
+		return "Kecepatan Maksimal Dari Mobil Ini Adalah ".$this->max_speed;
+	}
 }
 
 $bmw = new mobil;
@@ -15,4 +19,12 @@ $bmw->tipe = "320i";
 $bmw->mesin = "2000cc";
 $bmw->max_speed = "280km/h";
 
-echo "Tipe ".$bmw->cetakTipe();
+$bmw2 = new mobil;
+$bmw2->merk = "BMW";
+$bmw2->tipe = "320i";
+$bmw2->mesin = "2000cc";
+$bmw2->max_speed = "280km/h";
+
+echo "$bmw2->tipe";
+echo "<br>";
+echo "$bmw->tipe";
